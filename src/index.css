@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+}
+
+body{
+  background-color: transparent;
+  background-color: #faebd7;
+
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top:0;
+  z-index: 4000;
+  background-color:#faebd7 ;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0px 4rem;
+}
+
+header h1{
+  color: rgb(150, 133, 81);
+}
+
+.copy_code_btn{
+  outline: none;
+  border: wheat;
+  padding: 5px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+
+.section_code_container_and_description{
+  width: 100%;
+  min-height: 200vh;
+  /* border-top: 1px solid wheat; */
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.container_for_codepart{
+  width: 600px;
+  min-height: 100px;
+  /* background-color: white; */
+}
+
+.specific_container_for_code{
+  width: 100%;
+  min-height: 80px;
+  background-color: black;
+}
+
+.description_code_container{
+  width: 100%;
+  min-height: 50px;
+  background-color:white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+
+.nav_fixed_left{
+  width:40vw;
+  height:calc(100vh - 60px);
+  position: fixed;
+  top:60px;
+  right: 0;
+  background-color:#faebd7;
+  overflow-y: scroll;
+  transform: translateX(85%);
+  transition: all 1s ease;
+  display: flex;
+  gap: 0px;
+}
+.nav_container{
+  width: 90%;
+  height: 100%;
+  background-color:white;
+  border: 1px solid #e9c595;
+    border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+.nav_fixed_left.active{
+  transform: translate(0px);
+  transition: all 1s ease;
+}
+.btn_left_show_nav{
+  width: 10%;
+  height: 40%;
+  background-color:white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 30%;
+  border: 1px solid #e9c595;
+}
+
+
+.rigth_header{
+  width: 60%;
+  /* background-color: white; */
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.github_container{
+  width:200px;
+  background-color:white;
+  /* border: 1px solid rgb(255, 183, 183); */
+  margin-left: auto;
+  height:40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: chocolate;
+}
+.github_container a{
+  color: chocolate;
+}
